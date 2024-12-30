@@ -14,3 +14,5 @@ spring:
           #Reads from a specific filesystem folder
           # below forces the spring cloud config to look in /resources/config folder
           searchLocations: classpath:/config
+        git:
+          uri: 
