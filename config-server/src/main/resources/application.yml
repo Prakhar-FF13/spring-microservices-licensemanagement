@@ -4,3 +4,23 @@ logging:
 
 server:
   port: 8071
+
+#This file is loaded before application properties files
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native, git
+
+  cloud:
+    config:
+      server:
+        #Local configuration: This locations can either of classpath or
+        #locations in the filesystem.
+        native:
+          #Reads from a specific filesystem folder
+          # below forces the spring cloud config to look in /resources/config folder
+          searchLocations: classpath:/config
+        git:
+          uri: https://github.com/Prakhar-FF13/spring-microservices-licensemanagement
+          search-paths: config-server/src/main/resources/config

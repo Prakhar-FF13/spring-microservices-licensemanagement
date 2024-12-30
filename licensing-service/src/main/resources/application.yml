@@ -1,18 +1,18 @@
 spring:
   application:
-        name: licensing-server
+        name: licensing-service
   profiles:
     active: dev
   config:
-    import: configserver:http://localhost:8071
+    import: configserver:http://localhost:8071/
 
 #spring.datasource.url=""
 management:
   endpoints:
     web:
         base-path: /
-    access:
-        default: read_only
+#    access:
+#        default: read_only
   endpoint:
     health:
         access: read_only
