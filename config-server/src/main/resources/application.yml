@@ -6,7 +6,7 @@ spring:
   application:
     name: config-server
   profiles:
-    active: native, git
+    active: native,git
 
   cloud:
     config:
@@ -20,6 +20,7 @@ spring:
         git:
           uri: https://github.com/Prakhar-FF13/spring-microservices-licensemanagement
           search-paths: config-server/src/main/resources/config
+          default-label: main
 
 
 encrypt:
