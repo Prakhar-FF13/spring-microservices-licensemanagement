@@ -7,7 +7,6 @@ services:
       dockerfile: Dockerfile
     environment:
       PROFILE: "dev"
-      CONFIGHOST: http://configserver:8071
       # SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
       # CONFIGSERVER_URI: "http://configserver:8071"
       # CONFIGSERVER_PORT: "8071"
@@ -66,7 +65,6 @@ services:
       - "8070:8070"
     environment:
       PROFILE: "dev"
-      CONFIGHOST: http://configserver:8071
       # SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
       # CONFIGSERVER_URI: "http://configserver:8071"
       # CONFIGSERVER_PORT: "8071"
@@ -87,7 +85,6 @@ services:
       dockerfile: Dockerfile
     environment:
       PROFILE: "dev"
-      CONFIGHOST: http://configserver:8071
       # SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071"
       # CONFIGSERVER_URI: "http://configserver:8071"
       # CONFIGSERVER_PORT: "8071"

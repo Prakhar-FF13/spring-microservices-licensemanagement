@@ -4,9 +4,7 @@ spring:
   profiles:
     active: dev
   config:
-    import: configserver:${confighost}
-
-confighost: http://localhost:8071/
+    import: optional:configserver:http://localhost:8071/
 
 #spring.datasource.url=""
 management:
